@@ -10,7 +10,7 @@ DB_TYPE = 'mysql+mysqldb'
 DB_HOST = 'safeyouanalytics.mysql.pythonanywhere-services.com'
 DB_USER = 'safeyouanalytics'
 DB_PASS = '$afeYou2'
-DB_NAME = 'safeyou'
+DB_NAME = 'safeyouanalytics$default'
 # ------ END CREDENTIALS ----- #
 
 # -------- DB ACCESS --------- #
