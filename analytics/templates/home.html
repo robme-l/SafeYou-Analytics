@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- data-bs-theme="dark" -->
+<div class="card text-center mx-auto my-5 w-25 justify-content-center">
+    <div class="row g-0">
+        <div>
+        <div class="card-body" style="background-color: #352D39">
+        <h5 class="card-title" style="color:#FFFCF9;">Login</h5>
+        {% if error %}
+        <div class="alert alert-danger mt-3"
+        role="alert">
+        {{ error }}
+        </div>
+        {% endif %}
+        <p class="card-text">
+            <form method="POST" style="color:#FFFCF9;">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" 
+            class="btn btn-primary" style="background-color:#31AFD4;">
+            Login
+            </button>
+        </form>
+        </p>
+        </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
