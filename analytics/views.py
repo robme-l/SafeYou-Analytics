@@ -4,7 +4,7 @@ from django.shortcuts import redirect
 from django.contrib.auth.forms import AuthenticationForm
 from django.views.decorators.cache import cache_page
 from analytics import data as dataloader
-from analytics import visualizations as datavis
+from analytics import vis as datavis
 
 # Create your views here.
 def home(request):
